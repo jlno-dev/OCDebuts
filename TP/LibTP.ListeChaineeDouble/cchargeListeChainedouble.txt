@@ -1,0 +1,79 @@
+Dans la première partie du TP, nous allons réaliser une liste chaînée. Il s’agit du grand 
+classique des TP d’informatique en C. Je vous rappelle le principe.
+
+La liste chaînée permet de naviguer d’élément en élément. Quand nous sommes sur le premier élément,
+ le suivant est accessible par sa propriété Suivant. Lorsque nous accédons au suivant, l’élément précédent 
+ est accessible par la propriété Precedent et le suivant toujours accessible par la
+propriété Suivant. S’il n’y a pas de précédent ou pas de suivant, l’élément est null :
+Si on insère un élément à la position 1, les autres se décalent :
+Voilà, il faut donc créer une telle liste chaînée d’éléments. Le but est bien sûr de faire en sorte que l’élément soit générique.
+N’hésitez pas à réfléchir un peu avant de vous lancer. Cela pourrait paraître un peu simpliste, mais en fait cela occasionne quelques nœuds au cerveau.
+
+Toujours est-il que je souhaiterais disposer d’une propriété en lecture seule permettant d’accéder au premier élément ainsi qu’une autre propriété également en lecture seule permettant d’accéder au dernier élément. Bien sûr, il faut pouvoir naviguer d’élément en élément avec des propriétés précédent et suivant.
+
+Il faut évidemment une méthode permettant d’ajouter un élément à la fin de la liste. Nous aurons également besoin d’une méthode permettant d’accéder à un élément à partir de son indice et enfin d’une méthode permettant d’insérer un élément à un indice, décalant tous les suivants. Voilà pour la création de la classe !
+
+Ensuite, notre programme instanciera notre liste chaînée pour lui ajouter les entiers 5, 10 et 4. Puis nous afficherons les valeurs de cette liste en nous basant sur la première propriété et en naviguant d’élément en élément.
+Nous afficherons ensuite les différents éléments en utilisant la méthode d’accès à un élément par son indice.
+Enfin, nous insérerons la valeur 99 à la première position (position 0), puis la valeur 33 à la deuxième position et enfin la valeur 30 à nouveau à la deuxième position.
+Puis nous afficherons tout ce beau monde.
+
+class  Elem<T> {
+<T>Valeur
+Elem<T>  Suivant
+Elem <T> Precedent
+}
+
+Liste<T>
+{
+Elem<T> Premier
+Elem<T> Dernier
+int NbElem
+
+Ajouter(<T> Elem)
+	si Premier is null alors
+		Premier = new Elem<T>( valeur = Elem)
+		Dernier = Premier
+	sinon
+		t = new Elem<T>( valeur = Elem)
+		t.precedent = Dernier
+		Dernier=t
+		NbElem++
+	
+Ajouter(<T> Elem, int indice)
+	si Premier is null alors
+		Premier = new Elem<T>( valeur = Elem)
+		Dernier = Premier
+	sinon
+		
+		si ( indice > NbElem/2) alors
+			pt = denier;
+			tant que pt.precedent not null
+				si cpt <= indice alors break;
+				pt = pt.precedent
+			fin tant que
+		sinon
+			pt=prmier
+			tant que pt.suivant not null
+				si cpt > indice alors break;
+				pt = pt.suivant
+			fin tant que
+			
+			
+		fin si
+		t=new Elem<T>( valeur = Elem)
+		pt.suivant = t
+		t.precedent = pt
+	
+	
+nb=0;i=0; ajouter
+nb=3; i=5;; ajouter
+nb=3;i=2;1; ajouter(el,i) 
+
+	
+	
+	
+	
+
+
+
