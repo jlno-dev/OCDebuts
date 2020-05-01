@@ -1,19 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LibTP.Arbre
 {
-    public class Feuille<T> : IDisposable, IComparable <T>
+    public class Feuille<T> : IDisposable, IComparable<T>
     {
-        public T Valeur { get; protected set; }
-        public Feuille<T> Gauche { get; protected set; }
-        public Feuille<T> Droite { get; protected set; }
-        public Feuille<T> Precedent { get; protected set; }
+        public T Valeur { get; set; }
+        public Feuille<T> Gauche { get; set; }
+        public Feuille<T> Droite { get; set; }
+        public Feuille<T> Precedent { get; set; }
 
         #region IDisposable Support
-        private bool disposedValue = false; // To detect redundant calls
-        
- 
-               
+        private bool disposedValue = false; // To detect redundant calls         
 
         protected virtual void Dispose(bool disposing)
         {
@@ -50,13 +48,9 @@ namespace LibTP.Arbre
         #region IComparable<T>
         public int CompareTo(T pValeur)
         {
-            return this.Valeur.Equals(pValeur) ? 0 : 1;
+            return ((IComparable<T>)Valeur).CompareTo(pValeur);
         }
-        #endregion
 
-        public int CompareTo(Feuille<T> pFeuille)
-        {
-            return this.CompareTo(pFeuille.Valeur);
-        }
+        #endregion
     }
 }
