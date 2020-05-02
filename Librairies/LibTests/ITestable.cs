@@ -2,7 +2,7 @@
 
 namespace LibTests
 {
-    public interface iTestable
+    public interface ITestable
     {
         void Tester(EntreeSortie pES);
     }
