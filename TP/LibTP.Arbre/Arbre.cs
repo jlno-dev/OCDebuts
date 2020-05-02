@@ -23,7 +23,8 @@ namespace LibTP.Arbre
 
         public void Ajouter(T pValeur)
         {
-            AjouterElement(pValeur);
+            //AjouterElement(pValeur);
+            AjouterElement(Racine, pValeur);
         }
 
         protected void AjouterElement(T pValeur)
@@ -42,21 +43,40 @@ namespace LibTP.Arbre
                 {
                     valeurComparaison = courant.CompareTo(pValeur);
                     precedent = courant;
-                    if (valeurComparaison <= 0)
+                    if (valeurComparaison < 0)
                         courant = courant.Gauche;
                     else if (valeurComparaison > 0)
                         courant = courant.Droite;
+					else
+						break;
                 }
                 if (valeurComparaison < 0)
                 {
-                    precedent.Droite = nouvelleFfeuille;
-                    Console.WriteLine("droite"+pValeur.ToString());
+                    precedent.Droite = nouvelleFfeuille;                    
                 }
                 else if (valeurComparaison >= 0)
                 {
-                    precedent.Gauche = nouvelleFfeuille;
-                    Console.WriteLine("gauche" + pValeur.ToString());
+                    precedent.Gauche = nouvelleFfeuille;                    
                 }
+            }
+        }
+		
+		protected void AjouterElement(Feuille<T> pFeuille, T pValeur)
+        {
+            if (pFeuille == null)
+            {
+                pFeuille = new Feuille<T> { Valeur = pValeur };
+                NbFeuilles++;
+                if (Racine == null)
+                    Racine = pFeuille;
+            }
+            else 
+            {
+                int valeurComparaison = pFeuille.CompareTo(pValeur);
+                if (valeurComparaison > 0)
+                    AjouterElement(pFeuille.Gauche, pValeur);
+                else if (valeurComparaison < 0)
+                        AjouterElement(pFeuille.Droite, pValeur);
             }
         }
     } // end class 
