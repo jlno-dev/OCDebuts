@@ -8,6 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Librairies\LibEntreeSortie\LibEntreeSortie.csproj" />
     <ProjectReference Include="..\Librairies\LibTests\LibTests.csproj" />
+    <ProjectReference Include="..\TP\LibTP.Arbre\LibTP.Arbre.csproj" />
     <ProjectReference Include="..\TP\LibTP.JeuxTuerMonstres\LibTP.JeuxTuerMonstres.csproj" />
     <ProjectReference Include="..\TP\LibTP.ListeChaineeDouble\LibTP.ListeChaineeDouble.csproj" />
   </ItemGroup>

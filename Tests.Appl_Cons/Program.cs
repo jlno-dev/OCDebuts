@@ -15,7 +15,9 @@ namespace Tests.Appl_Cons
             //iTestable test = new TP_03_Loto(); 
             //iTestable test = new TP_04_JeuPlusMoins();
             //iTestable test = new TP01_Jeu_TuerMonstres();
-            iTestable test = new TP02_ListeDoubleGenerique();
+            //iTestable test = new TP02_ListeDoubleGenerique();
+            //test.Tester(new ESConsole());
+            ITestable test = new TP03Arbre();
             test.Tester(new ESConsole());
             Console.ReadLine();
             

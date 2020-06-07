@@ -4,7 +4,7 @@ using LibTP.ListeChaineeDouble;
 
 namespace Tests.Appl_Cons
 {
-    public class TP02_ListeDoubleGenerique : iTestable
+    public class TP02_ListeDoubleGenerique : ITestable
     {
         public void Tester(EntreeSortie pES)
         {

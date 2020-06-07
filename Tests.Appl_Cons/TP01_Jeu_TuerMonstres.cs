@@ -8,7 +8,7 @@ using LibJeux.TuerMonstres;
 
 namespace Tests.Appl_Cons
 {
-    class TP01_Jeu_TuerMonstres : iTestable
+    class TP01_Jeu_TuerMonstres : ITestable
     {
         public Personnage GenererMonstre()
         {

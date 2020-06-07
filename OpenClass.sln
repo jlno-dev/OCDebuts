@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests.Appl_Cons", "Tests.Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibTP.Arbre", "TP\LibTP.Arbre\LibTP.Arbre.csproj", "{E9E4B320-93C5-4403-81F4-EA34309B94C7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests_Cours_cons", "Cours\Tests_Cours.Cons\Tests_Cours_cons.csproj", "{99017D7E-A759-4BC4-868C-CAB168A5E9EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{E9E4B320-93C5-4403-81F4-EA34309B94C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9E4B320-93C5-4403-81F4-EA34309B94C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9E4B320-93C5-4403-81F4-EA34309B94C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99017D7E-A759-4BC4-868C-CAB168A5E9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99017D7E-A759-4BC4-868C-CAB168A5E9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99017D7E-A759-4BC4-868C-CAB168A5E9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99017D7E-A759-4BC4-868C-CAB168A5E9EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{56F4302A-A93B-4A77-A0D7-B598DE655FD4} = {C7697E93-7CBE-40F9-B0FD-D95D7F1E91F6}
 		{DCA3E197-0058-4E6A-A534-EE0E58FBE39E} = {C7697E93-7CBE-40F9-B0FD-D95D7F1E91F6}
 		{E9E4B320-93C5-4403-81F4-EA34309B94C7} = {63687AC9-D279-4297-83C6-12233F93447C}
+		{99017D7E-A759-4BC4-868C-CAB168A5E9EF} = {17ACE005-76E9-453C-A7CD-3264FCDA197A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFC02F1E-A9AC-48FA-9E18-C76D0BCA4C0A}

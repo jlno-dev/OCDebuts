@@ -54,7 +54,7 @@ namespace LibTP.Arbre
                 {
                     precedent.Droite = nouvelleFfeuille;                    
                 }
-                else if (valeurComparaison >= 0)
+                else if (valeurComparaison > 0)
                 {
                     precedent.Gauche = nouvelleFfeuille;                    
                 }
